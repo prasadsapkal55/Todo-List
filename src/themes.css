@@ -1,0 +1,289 @@
+/* 🎨 Todo App Color Themes */
+
+/* Theme 1: Sunset Orange */
+.theme-sunset {
+  --primary-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --card-bg: #ffffff;
+  --primary-color: #fa709a;
+  --secondary-color: #fee140;
+  --accent-color: #ff6b9d;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --text-muted: #a0aec0;
+  --border-color: rgba(250, 112, 154, 0.2);
+  --shadow: 0 8px 32px rgba(250, 112, 154, 0.15);
+  --success: #38a169;
+  --warning: #d69e2e;
+  --danger: #e53e3e;
+  --info: #3182ce;
+}
+
+/* Theme 2: Forest Green */
+.theme-forest {
+  --primary-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --card-bg: #ffffff;
+  --primary-color: #0f7a70;
+  --secondary-color: #2dd4bf;
+  --accent-color: #20b2aa;
+  --text-primary: #065f46;
+  --text-secondary: #047857;
+  --text-muted: #059669;
+  --border-color: rgba(17, 153, 142, 0.2);
+  --shadow: 0 8px 32px rgba(17, 153, 142, 0.15);
+  --success: #38a169;
+  --warning: #d69e2e;
+  --danger: #e53e3e;
+  --info: #3182ce;
+}
+
+/* Theme 3: Purple Dreams */
+.theme-purple {
+  --primary-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --card-bg: #ffffff;
+  --primary-color: #6b21a8;
+  --secondary-color: #a855f7;
+  --accent-color: #8b5cf6;
+  --text-primary: #4c1d95;
+  --text-secondary: #5b21b6;
+  --text-muted: #7c3aed;
+  --border-color: rgba(107, 33, 168, 0.3);
+  --shadow: 0 8px 32px rgba(107, 33, 168, 0.2);
+  --success: #38a169;
+  --warning: #d69e2e;
+  --danger: #e53e3e;
+  --info: #3182ce;
+}
+
+/* Theme 4: Rose Gold */
+.theme-rose {
+  --primary-gradient: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --card-bg: #ffffff;
+  --primary-color: #ed8936;
+  --secondary-color: #f6ad55;
+  --accent-color: #fbb040;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --text-muted: #a0aec0;
+  --border-color: rgba(237, 137, 54, 0.2);
+  --shadow: 0 8px 32px rgba(237, 137, 54, 0.15);
+  --success: #38a169;
+  --warning: #d69e2e;
+  --danger: #e53e3e;
+  --info: #3182ce;
+}
+
+/* Theme 5: Arctic Ice */
+.theme-arctic {
+  --primary-gradient: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+  --card-bg: #ffffff;
+  --primary-color: #3f2b96;
+  --secondary-color: #a8c0ff;
+  --accent-color: #7c3aed;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --text-muted: #a0aec0;
+  --border-color: rgba(63, 43, 150, 0.2);
+  --shadow: 0 8px 32px rgba(63, 43, 150, 0.15);
+  --success: #38a169;
+  --warning: #d69e2e;
+  --danger: #e53e3e;
+  --info: #3182ce;
+}
+
+/* Apply theme variables to components */
+body {
+  background: var(--primary-gradient) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.3s ease;
+}
+
+.bg-white {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+/* Ensure text visibility in white card areas for all themes */
+.bg-white input,
+.bg-white input[type="text"],
+.bg-white input[type="date"],
+.bg-white select,
+.bg-white textarea,
+.bg-white .form-control,
+.bg-white .form-select {
+  color: #212529 !important;
+  -webkit-text-fill-color: #212529 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ced4da !important;
+}
+
+.bg-white .form-control:focus,
+.bg-white .form-select:focus {
+  color: #212529 !important;
+  -webkit-text-fill-color: #212529 !important;
+  background-color: #ffffff !important;
+}
+
+.bg-white .form-control::placeholder {
+  color: #6c757d !important;
+}
+
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6,
+.bg-white .form-label {
+  color: #212529 !important;
+}
+
+/* Text color fixes for all themes */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.lead {
+  color: var(--text-secondary) !important;
+}
+
+.fw-bold {
+  color: var(--text-primary) !important;
+}
+
+.form-label {
+  color: var(--text-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.2rem var(--border-color) !important;
+}
+
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-light {
+  background: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Enhanced Purple Dreams theme contrast */
+.theme-purple .text-muted {
+  color: var(--text-primary) !important;
+  opacity: 0.8;
+}
+
+/* Theme selector styles */
+.theme-selector {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: var(--card-bg);
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .theme-selector {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .theme-selector .d-flex {
+    justify-content: center !important;
+  }
+  
+  /* Adjust notification position on mobile */
+  .alert.position-fixed {
+    top: 10px !important;
+    right: 10px !important;
+    left: 10px !important;
+    width: calc(100% - 20px) !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Smaller theme options on mobile */
+  .theme-option {
+    width: 35px !important;
+    height: 35px !important;
+    margin: 3px !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) and (min-width: 769px) {
+  .theme-selector {
+    top: 10px;
+    left: 10px;
+    padding: 8px;
+  }
+  
+  .theme-option {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+  }
+}
+
+.theme-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.theme-option:hover {
+  transform: scale(1.1);
+  border-color: var(--primary-color);
+}
+
+.theme-option.active {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--border-color);
+}
+
+.theme-sunset-preview { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.theme-forest-preview { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+.theme-purple-preview { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+.theme-rose-preview { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+.theme-arctic-preview { background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%); }
