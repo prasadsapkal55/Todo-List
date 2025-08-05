@@ -186,7 +186,6 @@ Edit the category options in the `App.js` component:
 
 - **React Team** - For the amazing React framework
 - **Bootstrap Team** - For the beautiful UI components
-- **Community** - For inspiration and feedback
 
 ## 📞 Support
 
