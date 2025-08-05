@@ -4,9 +4,6 @@ A modern, feature-rich Todo List application built with React and Bootstrap. Sta
 
 ![Todo List App](https://img.shields.io/badge/React-19.0.0-blue?logo=react)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-purple?logo=bootstrap)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-🌐 **[Live Demo](https://prasadsapkal55.github.io/Todo-List/)** | 📂 **[GitHub Repository](https://github.com/prasadsapkal55/Todo-List)**
 
 ## ✨ Features
 
