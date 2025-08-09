@@ -46,13 +46,11 @@ function App() {
     }
   }, []);
 
-  // Apply theme to body
   useEffect(() => {
     document.body.className = currentTheme;
     localStorage.setItem('todoTheme', currentTheme);
   }, [currentTheme]);
 
-  // Load tasks from localStorage on component mount
   useEffect(() => {
     const savedTasks = localStorage.getItem('todoTasks');
     if (savedTasks) {
@@ -60,7 +58,6 @@ function App() {
     }
   }, []);
 
-  // Save tasks to localStorage whenever list changes
   useEffect(() => {
     localStorage.setItem('todoTasks', JSON.stringify(list));
   }, [list]);
@@ -154,14 +151,12 @@ function App() {
   const getFilteredTasks = () => {
     let filtered = list;
 
-    // Filter by completion status
     if (filter === "completed") {
       filtered = filtered.filter(item => item.completed);
     } else if (filter === "pending") {
       filtered = filtered.filter(item => !item.completed);
     }
 
-    // Filter by search term
     if (searchTerm) {
       filtered = filtered.filter(item =>
         item.value.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -192,7 +187,6 @@ function App() {
 
   return (
     <Container className="my-4">
-      {/* Theme Selector - Mobile responsive */}
       <div className="theme-selector d-block d-md-block">
         <div className="d-flex flex-wrap">
           {themes.map((theme) => (
