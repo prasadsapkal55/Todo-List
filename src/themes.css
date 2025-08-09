@@ -90,7 +90,6 @@
   --info: #3182ce;
 }
 
-/* Apply theme variables to components */
 body {
   background: var(--primary-gradient) !important;
   color: var(--text-primary) !important;
@@ -104,7 +103,6 @@ body {
   box-shadow: var(--shadow) !important;
 }
 
-/* Ensure text visibility in white card areas for all themes */
 .bg-white input,
 .bg-white input[type="text"],
 .bg-white input[type="date"],
@@ -134,7 +132,6 @@ body {
   color: #212529 !important;
 }
 
-/* Text color fixes for all themes */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary) !important;
 }
@@ -192,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border-color) !important;
 }
 
-/* Enhanced Purple Dreams theme contrast */
 .theme-purple .text-muted {
   color: var(--text-primary) !important;
   opacity: 0.8;
@@ -228,7 +224,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center !important;
   }
   
-  /* Adjust notification position on mobile */
   .alert.position-fixed {
     top: 10px !important;
     right: 10px !important;
